@@ -123,3 +123,50 @@ html, body {
 .pre-content {
   @apply uppercase text-center pb-10 font-neuethin
 }
+
+.modal {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  transform: translateY(-50%, -50%);
+  opacity: 0;
+  padding: 20px;
+  width: auto;
+  height: calc(100% - 40px); /* Resta el padding superior e inferior */
+  overflow-y: auto; /* Permite hacer scroll si el contenido es demasiado largo */
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Transición suave */
+  z-index: 1000; /* Asegura que el modal esté por encima del resto del contenido */
+}
+
+.modal.open {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease;
+}
+
+.modal button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FE100F;
+}
+
+.modal-enter {
+  transform: translateX(-100%);
+}
+
+.modal-enter-active {
+  transform: translateX(0);
+}
+
+.modal-exit {
+  transform: translateX(0);
+}
+
+.modal-exit-active {
+  transform: translateX(-100%);
+}

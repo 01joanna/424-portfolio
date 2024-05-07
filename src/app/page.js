@@ -13,7 +13,7 @@ export default function Home() {
       <Header />
       <div>
         <Main />
-        {/* <Projects /> */}
+        <Projects />
         <Pluma id="pluma" />
         <Footer id="footer" />
       </div>

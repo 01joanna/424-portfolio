@@ -38,7 +38,7 @@ export default function Pluma() {
                     </div>
 
                     <div>
-                    <p className="text-black text-[19px] w-[25rem] text-justify font-neuethin absolute top-[17rem] left-[26rem]">Founded with the purpose of fostering a sense of community around literature, Pluma seeks to connect with local talent and readers alike. Through open submissions, the editorial team carefully curates each publication, selecting works that captivate, inspire, and challenge. From over 500 submissions received, Pluma crafts a finely curated collection of 10 to 15 short stories, weaving together narratives that reflect the richness of contemporary storytelling.</p>
+                    <p className="text-black text-[19px] w-[40rem] text-justify font-neuethin absolute top-[21rem] left-[26rem]">Founded with the purpose of fostering a sense of community around literature, Pluma seeks to connect with local talent and readers alike. Through open submissions, the editorial team carefully curates each publication, selecting works that captivate, inspire, and challenge. From over 500 submissions received, Pluma crafts a finely curated collection of 10 to 15 short stories, weaving together narratives that reflect the richness of contemporary storytelling.</p>
                     </div>
 
                     <div>
