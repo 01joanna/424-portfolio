@@ -1,7 +1,10 @@
+
 export default function Header() {
+
+    
     return (
-        <nav className="w-full absolute top-8 left-6">
-            <ul className="flex flex-col text-sm uppercase bg-transparent font-neuethin">
+        <nav className="w-full sticky">
+            <ul className="flex gap-14 items-center justify-around text-lg uppercase bg-transparent font-neuethin absolute top-0 w-full">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>

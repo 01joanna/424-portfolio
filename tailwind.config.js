@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       overpass: ["Overpass Mono", "sans-serif"],
+      readex: ["Readex Pro", "sans-serif"],
       editorialReg: ["PP Editorial New Regular", "sans-serif"],
       editorialItalic: ["PP Editorial New Italic", "sans-serif"],
       editorialUltrabold: ["PP Editorial New Ultrabold", "sans-serif"],
@@ -17,6 +18,8 @@ module.exports = {
       robertmedium: ["Robert Medium", "sans-serif"],
       neuemedium: ["PP Neue Montreal Medium", "sans-serif"],
       neuethin: ["PP Neue Montreal Thin", "sans-serif"],
+      bdsupper: ["BD Supper", "sans-serif"],
+      bdsupperbold: ["BD Supper Bold", "sans-serif"],
     },
     extend: {
       backgroundImage: {
