@@ -1,32 +1,6 @@
-'use client'
-import Image from "next/image"
-import image from "../../../../public/pluma/pluma9.png"
-import { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import React from 'react'
 
 export default function Pluma() {
-
-    // useEffect(() => {
-    //     const sections = gsap.utils.toArray(".panel");
-    
-    //     gsap.to(sections, {
-    //       xPercent: -100 * (sections.length - 1),
-    //         ease: "none",
-
-    //         scrollTrigger: {
-    //         trigger: ".container",
-    //         pin: true,
-    //         invalidateOnRefresh: true,
-    //         anticipatePin: 1,
-    //         scrub: 1.23,
-    //         end: () => "+=" + document.querySelector(".container").offsetWidth
-    //         }
-    //     });
-    //     }, []);
-
     return (
         <section id="pluma" className="bg-gray-200 w-screen h-screen flex flex-col">
             <span className="pre-content text-black mt-20">( Pluma )</span>

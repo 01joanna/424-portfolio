@@ -5,17 +5,26 @@ import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Pluma from "./components/Pluma/Pluma";
 import Projects from "./components/Projects/Projects";
+import RedCircle from "./components/RedCircle/RedCircle";
 
 export default function Home() {
+  const [showHeader, setShowHeader] = useState(false);
+  const [isHeaderVisible, setIsHeaderVisible] = useState(false);
+
+  const handleToggleHeader = () => {
+    setShowHeader(!showHeader);
+    setIsHeaderVisible(!isHeaderVisible);
+  };
 
   return (
     <>
-      <Header />
       <div>
+        <RedCircle onClick={handleToggleHeader} />
+        {isHeaderVisible && <Header />}
         <Main />
         <Projects />
-        <Pluma id="pluma" />
-        <Footer id="footer" />
+        <Pluma />
+        <Footer />
       </div>
     </>
   );

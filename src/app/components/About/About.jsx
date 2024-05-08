@@ -7,7 +7,7 @@ export default function About() {
                 <h2 className='font-bold uppercase font-neuemedium'>Skills</h2>
                 <div className='flex flex-col gap-5'>
                     <p>HTML, CSS, JAVASCRIPT, TAILWIND, BOOTSTRAP, REACT, NEXT.JS, VUE</p>
-                    <p>PHP, LARAVEL, SQL-NOSQL DATABASE, MYSQL, TDD, CYPRESS, VITEST, JEST, RESTful APIs</p>
+                    <p>PHP, LARAVEL, SQL-NOSQL DATABASE, PINIA, FIREBASE, MYSQL, TDD, CYPRESS, VITEST, JEST, RESTful APIs</p>
                     <p>UX/UI DESIGN AND ACCESSIBILITY, ATOMIC DESIGN VARIETY, AGILE METHODOLOGIES, KANBAN and SCRUM METHODOLOGIES, SOLID CLEAN CODE, POSTMAN</p>
                     <p>FIGMA, PHOTOSHOP ILLUSTRATOR, INDESIGN, EXCEL, ANALOG AND DIGITAL PHOTOGRAPHY</p>
                 </div>

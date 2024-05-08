@@ -1,15 +1,23 @@
 
 export default function Header() {
 
+    function scrollToSection(event) {
+        event.preventDefault();
+        const targetId = event.target.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     
     return (
-        <nav className="w-full sticky">
+        <nav className="w-full sticky z-30 top-0 ">
             <ul className="flex gap-14 items-center justify-around text-lg uppercase bg-transparent font-neuethin absolute top-0 w-full">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#pluma">Pluma</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onClick={scrollToSection}>Home</a></li>
+                <li><a href="#about" onClick={scrollToSection}>About</a></li>
+                <li><a href="#projects" onClick={scrollToSection}>Projects</a></li>
+                <li><a href="#pluma" onClick={scrollToSection}>Pluma</a></li>
+                <li><a href="#contact" onClick={scrollToSection}>Contact</a></li>
             </ul>
         </nav>
     )
