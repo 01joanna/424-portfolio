@@ -88,6 +88,14 @@ html, body {
   font-family: 'BD Supper Bold';
   src: url('../../public/fonts/BDSupperBold.ttf');
 } 
+@font-face {
+  font-family: 'Lettre';
+  src: url('../../public/fonts/Lettre.otf');
+}
+@font-face {
+  font-family: 'Bapalopa';
+  src: url('../../public/fonts/bapalopa_pa.ttf');
+}
 
 .project {
   @apply border-y border-black
@@ -116,7 +124,11 @@ html, body {
 }
 
 .nav-main {
-  @apply font-neuethin tracking-widest text-lg absolute
+  @apply font-neuemedium tracking-widest text-lg text-white absolute flex
+}
+
+.main-dots {
+  @apply text-3xl text-yellow-100
 }
 
 

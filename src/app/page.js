@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Pluma from "./components/Pluma/Pluma";
 import Projects from "./components/Projects/Projects";
 import RedCircle from "./components/RedCircle/RedCircle";
+import SecondMain from "./components/SecondMain/SecondMain";
 
 export default function Home() {
   const [showHeader, setShowHeader] = useState(false);
@@ -16,12 +17,14 @@ export default function Home() {
     setIsHeaderVisible(!isHeaderVisible);
   };
 
+
   return (
     <>
-      <div>
+      <div id="data-scroll-container">
         <RedCircle onClick={handleToggleHeader} />
         {isHeaderVisible && <Header />}
-        <Main />
+        {/* <Main /> */}
+        <SecondMain />
         <Projects />
         <Pluma />
         <Footer />

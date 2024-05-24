@@ -79,7 +79,7 @@ export default function Main() {
         <section id="home" className='bg-[#E3D7EA] text-[#FE100F] w-screen h-screen flex items-center justify-center relative z-10' onClick={changeImage}>
             <div className='flex flex-col gap-3 font-bdsupper text-2xl ml-64 mt-72 right-44 w-[600px] items-center justify-center'>
                 <h1 className="text-[45px] tracking-wider">johanna cuevas</h1>
-                <p className="text-justify font-neuethin leading-none tracking-wider">is a recently gratuated (full-stack) web developer, former book editor, based in Barcelona. She thrives on the intersection of creativity and functionality in web development. Her aim is to collaborate on innovative projects, make useful websites and build creative visual experiences through her work.</p>
+                <p className="text-justify font-neuethin leading-none tracking-wider"> is a recently gratuated (full-stack) web developer, former book editor, based in Barcelona. She thrives on the intersection of creativity and functionality in web development. Her aim is to collaborate on innovative projects, make useful websites and build creative visual experiences through her work.</p>
             </div>
 
             <div id='pictures' className='absolute z-20 w-[900px] items-center justify-center' style={{ bottom: imagePosition.bottom, left: imagePosition.left, paddingLeft: '250px', paddingBottom: '300px', marginTop: '900px' }}>

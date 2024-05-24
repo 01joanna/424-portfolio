@@ -20,6 +20,8 @@ module.exports = {
       neuethin: ["PP Neue Montreal Thin", "sans-serif"],
       bdsupper: ["BD Supper", "sans-serif"],
       bdsupperbold: ["BD Supper Bold", "sans-serif"],
+      lettre: ["Lettre", "sans-serif"],
+      bapalopa: ["Bapalopa", "sans-serif"],
     },
     extend: {
       backgroundImage: {

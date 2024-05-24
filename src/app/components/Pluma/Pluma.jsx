@@ -16,7 +16,7 @@ export default function Pluma() {
                     </div>
 
                     <div>
-                    <p className="text-black text-[19px] w-[24rem] text-justify font-neuethin absolute top-[3rem] left-[45rem]">Pluma operates as a collaborative endeavor, driven by the passion and dedication of its four-member team. From the initial stages of editing and design to the final steps of printing and distribution, every aspect of Pluma's production process is made by us.</p>
+                    <p className="text-black text-[19px] w-[24rem] text-justify font-neuethin absolute top-[3rem] left-[45rem]">Pluma operates as a collaborative endeavor, driven by the passion and dedication of its four-member team. From the initial stages of editing and design to the final steps of printing and distribution, every aspect of Pluma production process is made by us.</p>
                     </div>
                     
                 </section>
