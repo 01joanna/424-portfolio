@@ -12,10 +12,11 @@ export default function SecondMain() {
 
     
     return (
-        <div className="sticky">
+        <div className="sticky m-3">
             <Image 
             src={main}
             alt='main'
+            className='h-[70%]'
             />
             {/* <Image 
             src={espiral}
@@ -23,7 +24,7 @@ export default function SecondMain() {
             width={400}
             className='absolute top-[15rem] left-[30rem]'
             /> */}
-            <h1 className="font-bapalopa text-[90px] absolute top-44 left-10 text-yellow-200 leading-none w-20">Welcome to my port folio</h1>
+            <h1 className="font-bapalopa text-[200px] absolute top-[25rem] left-10 text-yellow-300 leading-[140px] w-20">Johanna cuevas*</h1>
             <div className=''>
                     <ul>
                         <li className='nav-main top-[20rem] left-[53rem] rotate-90' onClick={() => scrollToSection('contact')}> <GoDotFill className='main-dots'/>contact</li>

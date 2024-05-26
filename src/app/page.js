@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
+import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Pluma from "./components/Pluma/Pluma";
 import Projects from "./components/Projects/Projects";
@@ -25,8 +26,8 @@ export default function Home() {
         {isHeaderVisible && <Header />}
         {/* <Main /> */}
         <SecondMain />
+        <About />
         <Projects />
-        <Pluma />
         <Footer />
       </div>
     </>

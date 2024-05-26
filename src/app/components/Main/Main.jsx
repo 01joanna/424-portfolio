@@ -2,19 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import About from '../About/About';
-import image1 from '../../../../public/joanna/image-2.jpeg';
-import image2 from '../../../../public/joanna/image3.jpeg';
-import image3 from '../../../../public/joanna/image4.jpeg';
-import image4 from '../../../../public/joanna/image5.jpeg';
-import image5 from '../../../../public/joanna/image6.jpeg';
-import image6 from '../../../../public/joanna/image7.jpeg';
-import image7 from '../../../../public/joanna/image8.jpeg';
-import image8 from '../../../../public/joanna/image9.jpeg';
-import image9 from '../../../../public/joanna/image10.jpeg';
-import image10 from '../../../../public/joanna/image11.jpeg';
-import image11 from '../../../../public/joanna/image12.jpeg';
-import image12 from '../../../../public/joanna/image13.jpeg';
-import image13 from '../../../../public/joanna/image14.jpeg';
+
 
 
 export default function Main() {

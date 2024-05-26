@@ -210,3 +210,41 @@ html, body {
   text-transform: uppercase;
 }
 
+
+.johanna {
+  position: relative;
+  display: inline-block;
+}
+
+.johanna::after {
+  content: "";
+  background-image: url('/johanna-2024.jpg'); /* Ruta a la imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0%;
+  left: 70%;
+  transform: translateX(-50%);
+  width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  display: none; /* Oculta la imagen por defecto */
+}
+
+.johanna:hover::after {
+  display: block; /* Muestra la imagen al hacer hover */
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+.nav-about {
+  @apply  w-10 leading-none
+}
+.nav-about:hover {
+  @apply underline decoration-[2px] underline-offset-[7px]
+}
