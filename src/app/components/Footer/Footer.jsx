@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <section id="contact" className="w-screen h-[90%] bg-black p-10 text-white font-neuethin flex flex-col gap-10 justify-center items-center z-10">
             <p className="pre-content">( Contact )</p>
-            <h1 className="font-editorialUltraLightItalic text-[70px] leading-none text-center">THINK WE CAN<br/><i>CREATE SOMETHING</i><br/>TOGETHER?</h1>
+            <h1 className="font-bapalopa text-[70px] leading-none text-center">Think we can<br/><i>CREATE SOMETHING</i><br/>together?</h1>
 
             <div className="flex gap-44 items-center justify-center"> 
                 <div className="flex flex-col gap-4">

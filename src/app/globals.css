@@ -79,15 +79,6 @@ html, body {
   font-family: 'PP Neue Montreal Thin';
   src: url('../../public/fonts/PPNeueMontreal-Thin.otf');
 } 
-
-@font-face {
-  font-family: 'BD Supper';
-  src: url('../../public/fonts/BDSupperRegular.ttf');
-} 
-@font-face {
-  font-family: 'BD Supper Bold';
-  src: url('../../public/fonts/BDSupperBold.ttf');
-} 
 @font-face {
   font-family: 'Lettre';
   src: url('../../public/fonts/Lettre.otf');
@@ -99,16 +90,6 @@ html, body {
 
 .project {
   @apply border-y border-black
-}
-
-.scroll-message {
-  /* animation: bounce 2s infinite, appear 0.5s forwards; */
-  opacity: 0;
-  transition: opacity 0.5s ease; 
-}
-
-.scroll-message.show {
-  opacity: 1;
 }
 
 .header {
@@ -134,80 +115,6 @@ html, body {
 
 .pre-content {
   @apply uppercase text-center pb-10 font-neuethin
-}
-
-.modal {
-  position: fixed;
-  top: 0%;
-  left: 0;
-  transform: translateY(-50%, -50%);
-  opacity: 0;
-  padding: 20px;
-  width: auto;
-  height: calc(100% - 40px); /* Resta el padding superior e inferior */
-  overflow-y: auto; /* Permite hacer scroll si el contenido es demasiado largo */
-  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Transición suave */
-  z-index: 1000; /* Asegura que el modal esté por encima del resto del contenido */
-}
-
-.modal.open {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s ease;
-}
-
-.modal button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  color: #FE100F;
-}
-
-.modal-enter {
-  transform: translateX(-100%);
-}
-
-.modal-enter-active {
-  transform: translateX(0);
-}
-
-.modal-exit {
-  transform: translateX(0);
-}
-
-.modal-exit-active {
-  transform: translateX(-100%);
-}
-
-.scroll-section-outer {
-  overflow: hidden;
-}
-
-.scroll-section-inner {
-  height: 100vh;
-  width: 400vw;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-}
-
-.scroll-section {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.scroll-section h3 {
-  color: var(--primaryTextColor);
-  letter-spacing: var(--headlineMedium);
-  font-size: var(--headlineMedium);
-  text-transform: uppercase;
 }
 
 
@@ -243,8 +150,8 @@ html, body {
 }
 
 .nav-about {
-  @apply  w-10 leading-none
+  @apply  w-10 leading-none cursor-pointer
 }
 .nav-about:hover {
-  @apply underline decoration-[2px] underline-offset-[7px]
+  @apply underline decoration-[2px] underline-offset-[7px] text-yellow-300
 }

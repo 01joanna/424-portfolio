@@ -1,18 +1,38 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react';
+import Modal from '../Modal/Modal';
+import Projects from '../Projects/Projects';
+import Skills from '../Skills/Skills';
+import BeforeCoding from '../BeforeCoding/BeforeCoding';
 
 export default function About() {
-    return (
+    const [showModal, setShowModal] = useState(false);
+    const [modalContent, setModalContent] = useState({ title: '', content: null });
 
-        <section className='bg-white font-neuethin my-20 flex flex-col gap-20'>
-            <h1 className='text-[90px] leading-none tracking-wide mx-20'>Hello! I am <span className='johanna underline decoration-[7px] underline-offset-[7px]'>Johanna</span>, and you have found yourself inside my portfolio, welcome! I am a recently graduated web developer based in Barcelona and I love creating functional yet fun and innovative websites. </h1>
+    const handleModal = (title, content) => {
+        setModalContent({ title, content });
+        setShowModal(true);
+    };
+
+    const closeModal = () => {
+        setShowModal(false);
+    };
+
+    return (
+        <section id='about' className='bg-white font-neuethin my-20 flex flex-col gap-20'>
+            <h1 className='text-[90px] leading-none tracking-wide mx-20'>
+                Hello! I am <span className='johanna underline decoration-[7px] underline-offset-[7px]'>Johanna</span>, and you have found yourself inside my portfolio, welcome! I am a recently graduated web developer based in Barcelona and I love creating functional yet fun and innovative websites.
+            </h1>
             <div className='flex justify-evenly text-[60px] w-full'>
-                <h4 className='nav-about pr-52'>Projects</h4>
-                <h4 className='nav-about'>Before Coding</h4>
-                <h4 className='nav-about'>Skills and studies</h4>
-                <h4 className='nav-about'>Others</h4>
+                <h4 className='nav-about pr-52' onClick={() => handleModal('Projects', <Projects />)}>Projects</h4>
+                <h4 className='nav-about' onClick={() => handleModal('Before Coding', <BeforeCoding />)}>Before Coding</h4>
+                <h4 className='nav-about' onClick={() => handleModal('Skills and Studies', <Skills />)}>Skills and Studies</h4>
+                <h4 className='nav-about' onClick={() => handleModal('Others', <div>Here is some other detailed information...</div>)}>Others</h4>
             </div>
-            
+            <Modal show={showModal} onClose={closeModal} content={modalContent.content} />
         </section>
+    );
+}
 
 // Most of my selected work has been student-based projects that you can check some of them <s>here</s>, but I am working on my own personal projects that will soon be shown here.
         // <section id='about' className='font-neuethin flex flex-col gap-14 w-[500px] bg-white py-4 px-2 rounded-2xl'>
@@ -34,5 +54,3 @@ export default function About() {
         //         </div>
         //     </div>
         // </section>
-    )
-}

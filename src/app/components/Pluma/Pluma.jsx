@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Pluma() {
     return (
-        <section id="pluma" className="bg-gray-200 w-screen h-screen flex flex-col">
+        <section id="pluma" className="bg-yellow-300 w-screen h-screen flex flex-col">
             <span className="pre-content text-black mt-20">( Pluma )</span>
                 <section id="text-container" className="flex flex-col pl-20 relative panel">
                     <h2 className="text-[80px] font-editorialUltraLightItalic text-black uppercase tracking-wider w-20 leading-none">Introducing Pluma</h2>
