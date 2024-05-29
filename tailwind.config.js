@@ -22,6 +22,7 @@ module.exports = {
       bdsupperbold: ["BD Supper Bold", "sans-serif"],
       lettre: ["Lettre", "sans-serif"],
       bapalopa: ["Bapalopa", "sans-serif"],
+      foundersbold: ["Founders Bold", "sans-serif"],
     },
     extend: {
       backgroundImage: {

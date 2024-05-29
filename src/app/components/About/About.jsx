@@ -20,7 +20,7 @@ export default function About() {
 
     return (
         <section id='about' className='bg-white font-neuethin my-20 flex flex-col gap-20'>
-            <h1 className='text-[90px] leading-none tracking-wide mx-20'>
+            <h1 className='text-[70px] leading-none tracking-wide mx-20'>
                 Hello! I am <span className='johanna underline decoration-[7px] underline-offset-[7px]'>Johanna</span>, and you have found yourself inside my portfolio, welcome! I am a recently graduated web developer based in Barcelona and I love creating functional yet fun and innovative websites.
             </h1>
             <div className='flex justify-evenly text-[60px] w-full'>

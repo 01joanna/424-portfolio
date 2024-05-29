@@ -33,8 +33,6 @@ html, body {
   --spacing: clamp(0.9rem, 0.75vw, 1.3rem);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
-
 @font-face {
   font-family: 'PP Editorial New Regular';
   src: url('../../public/fonts/PPEditorialNew-Regular.otf')
@@ -66,11 +64,6 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Robert Medium';
-  src: url('../../public/fonts/RoobertMedium.ttf');
-} 
-
-@font-face {
   font-family: 'PP Neue Montreal Medium';
   src: url('../../public/fonts/PPNeueMontreal-Medium.otf');
 } 
@@ -87,6 +80,12 @@ html, body {
   font-family: 'Bapalopa';
   src: url('../../public/fonts/bapalopa_pa.ttf');
 }
+
+@font-face {
+  font-family: 'Founders Bold';
+  src: url('../../public/fonts/TestFoundersGrotesk-Bold-BF66175e9700615.otf');
+}
+
 
 .project {
   @apply border-y border-black
@@ -129,7 +128,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 0%;
+  bottom: -20%;
   left: 70%;
   transform: translateX(-50%);
   width: 200px; /* Ajusta el tamaño de la imagen según tus necesidades */
@@ -141,17 +140,13 @@ html, body {
   display: block; /* Muestra la imagen al hacer hover */
 }
 
-.text-white {
-  color: white;
-}
-
-.text-black {
-  color: black;
-}
-
 .nav-about {
   @apply  w-10 leading-none cursor-pointer
 }
 .nav-about:hover {
   @apply underline decoration-[2px] underline-offset-[7px] text-yellow-300
+}
+
+.pluma-title  {
+  @apply absolute font-foundersbold text-[90px]
 }

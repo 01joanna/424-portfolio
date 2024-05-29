@@ -1,6 +1,5 @@
 import React from 'react'
-import main from "../../../../public/photo08_15.jpg"
-import espiral from "../../../../public/espiral.png"
+import main from "../../../../public/main.jpg"
 import { GoDotFill } from "react-icons/go";
 import Image from 'next/image'
 
@@ -12,19 +11,11 @@ export default function SecondMain() {
 
     
     return (
-        <div className="sticky m-3">
+        <div className="sticky m-3 bg-transparent h-full">
             <Image 
             src={main}
-            alt='main'
-            className='h-[70%]'
-            />
-            {/* <Image 
-            src={espiral}
-            alt='espiral' 
-            width={400}
-            className='absolute top-[15rem] left-[30rem]'
-            /> */}
-            <h1 className="font-bapalopa text-[200px] absolute top-[25rem] left-10 text-yellow-300 leading-[140px] w-20">Johanna cuevas*</h1>
+            alt='Murcia picture to main website'/>
+            <h1 className="font-bapalopa text-[200px] absolute top-[25rem] left-10 text-yellow-300 leading-[140px] w-20 bg-transparent">Johanna cuevas*</h1>
             <div className=''>
                     <ul>
                         <li className='nav-main top-[20rem] left-[53rem] rotate-90' onClick={() => scrollToSection('contact')}> <GoDotFill className='main-dots'/>contact</li>
